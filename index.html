@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--Attach Mateerialize file -->
-    <link rel="stylesheet" href="./assets/materialize/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="./assets/materialize/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
 
 
 </head>
@@ -34,7 +36,7 @@
                 </ul>
 
                 <!-- Side-Nav -->
-                <!-- <ul id="side-nav" class="side-nav "> 
+                <ul id="side-nav" class="side-nav "> 
                     <li>
                         <div class="user-viwe">
                             <div class="background">
@@ -65,7 +67,7 @@
                     <li><a href="#" class="divider"></a></li>
                     <li><a href="#" class="subheader">Account Controls</a></li>
                     <li><a href="login.html" class="waves-effect">Logout</a></li>
-                </ul> -->
+                </ul>  
             </div>
         </div>
     </div>
@@ -89,7 +91,7 @@
             <div class="card-panel center ">
                 <i class="material-icons">mode_edit</i>
                 <h5>وبلاگ</h5>
-                <h3 class="count">‌450</h3>
+                <h3 class="count">560</h3>
                 <div class="progress grey ">
                     <div class="determinate  blue lighten-1" style="width:40% ;"></div>
                 </div>
@@ -150,37 +152,45 @@
 
 
 
-<!--Attach Jquery CDN -->
-    <script 
-    type="text/javascript"
-     src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.6.4.js"
+ integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+ crossorigin="anonymous"></script>   
+   
 
      <!--Attach Materilize JS File -->
-    <script type="text/javascript" src="./assets/materialize/js/materialize.min.js"></script>
+    <!-- <script type="text/javascript" src="./assets/materialize/js/materialize.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
 
-     <script>
-                        // $('.section').hide();
+
+      <script>
+        $('.section').hide();
+
+        setTimeout(function(){
+            
    $(document).ready(function(){
+
 
 $('.section').fadeIn();
 
-    // sideNav
-    $('.button-collapse').sideNav();
+ // sideNav
+ $('.button-collapse').sideNav();
 
-    // counter
-    $('.count').each(function(){
-        $(this).prop('Counter',0).animate({
-            Counter:$(this).text()
-        },{
-            duration:3000,
-            easing:'swing',
-            step:function(now){
-                $(this).text(Math.ceil(now));
-            }
-        });
-    });
+ // counter
+ $('.count').each(function(){
+     $(this).prop('Counter',0).animate({
+         Counter:$(this).text()
+     },{
+         duration:3000,
+         easing:'swing',
+         step:function(now){
+             $(this).text(Math.ceil(now));
+         }
+     });
+ });
 });
-    </script> 
+        },1000)
+
+    </script>  
 </body>
 </html>
