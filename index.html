@@ -296,11 +296,65 @@
                 </div>
             </div>
           </div>
-
-
-
         </div>
     </section>
+
+        <!-- END Recent Posts -->
+
+        <!-- Start Footer -->
+        <footer class="section blue darken-2 white-text center">
+            <p>Admin-Panel Copyright &copy; 2014</p>
+        </footer>
+        
+        <!-- Fixed btn -->
+        <div class="fixed-action-btn">
+            <a href="" class="btn-floating btn-large red">
+                <i class="material-icons">add</i>
+            </a>
+            <ul>
+                <li><a href="#post-modal" class=" modal-trigger btn-floating blue">
+                    <i class="material-icons">mode_edit</i>
+                </a></li>
+                <li><a href="#category-modal" class=" modal-trigger btn-floating blue">
+                    <i class="material-icons">folder</i>
+                </a></li>
+                <li><a href="#user-modal" class=" modal-trigger btn-floating blue">
+                    <i class="material-icons">supervisor_account</i>
+                </a></li>
+            </ul>
+        </div>
+
+        <!-- Modal post -->
+           <div id="post-modal" class="modal">
+            <div class="modal-content">
+                <h4>افزودن پست</h4>
+                <form>
+                    <div class="input-field">
+                        <input type="text" id="title"/>
+                        <label for="title">عنوان</label>
+                    </div>
+
+                    <div class="input-field">
+                        <select >
+                            <option value="" disabled selected>انتخاب گزینه</option>
+                            <option value="1" > توسعه دهنده</option>
+                            <option value="2" > گرافیست</option>
+                            <option value="3" > طراح وب</option>
+                            <option value="2" > سایر</option>
+                        </select>
+                        <label >دسته بندی</label>
+                    </div>
+                    <div class="input-field">
+                        <textarea name="editore" id="body"  class="materialize-textarea"></textarea>
+                        <label for="body"></label>
+                    </div>
+                </form>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close btn blue white-text">ارسال</a>
+                </div>
+            </div>
+           </div>
+
 
     <!-- Preloader -->
     <div class="preloader-wrapper big active custom-loader">
@@ -331,6 +385,10 @@
     <!-- Attach Canvasjs CDN -->
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
+    <!-- CK Editor CDN -->
+    <script src="https://cdn.ckeditor.com/4.20.2/standard/ckeditor.js"></script>
+
+
     <!-- Attach Chart.js File -->
     <script src="./assets/js/chart.js"></script>
 
@@ -347,6 +405,12 @@
 
           // sideNav
           $(".button-collapse").sideNav();
+
+        //   show modal
+        $('.modal').modal();
+        // show select
+        $('select').material_select();
+
 
           // counter
           $(".count").each(function () {
@@ -388,7 +452,7 @@
                             </a></div>
                         </li>`;
 
-                        $('.todo').append(output);
+                        $('.todos').append(output);
 
                         materialize.toast('وظیفه اضافه شد',3000)
             e.preventDefault();
@@ -397,7 +461,12 @@
         // delete todos
 
 
-        $('.todos').on()
+        $('.todos').on('click','.delete',function(e){
+            $(this).parent().remove();
+        e.preventDefault();
+        });
+
+        CKEDITOR.replace('editore');
 
         });
 
