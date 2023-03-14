@@ -1,0 +1,24 @@
+*,html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+li,ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* body{
+    scroll-behavior: smooth;
+} */
+
+
+
+
+.custom-loader{
+    position: absolute;
+    top: 55%;
+    left: 47%;
+}

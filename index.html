@@ -9,8 +9,7 @@
     <!--Attach Materilize Fonts CDN -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!--Attach Mateerialize file -->
-    <!-- <link rel="stylesheet" href="./assets/materialize/css/materialize.min.css"> -->
+    <!--Attach Mateerialize CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
 
@@ -124,6 +123,20 @@
 <!-- END STATS -->
 <!-- Preloader -->
 
+<div class="preloader-wrapper big active custom-loader">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- END Preloder -->
+
 
 
 
@@ -161,17 +174,23 @@
     <!-- <script type="text/javascript" src="./assets/materialize/js/materialize.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
+    <!-- Attach Styles.css File -->
+    <link rel="stylesheet" href="./assets/styles.css">
+
 
 
       <script>
+        // hide section
         $('.section').hide();
 
         setTimeout(function(){
             
    $(document).ready(function(){
 
-
+// show section
 $('.section').fadeIn();
+// hide preloader
+$('.custom-loader').fadeOut();
 
  // sideNav
  $('.button-collapse').sideNav();
