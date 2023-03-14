@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/parsing": "off",
+    "axe/forms": [
+      "default",
+      {
+        "select-name": "off",
+        "label": "off"
+      }
+    ]
+  }
+}
