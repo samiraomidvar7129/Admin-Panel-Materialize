@@ -14,6 +14,58 @@
 
 </head>
 <body>
+    <!-- HEADER -->
+<nav class="blue darken-2">
+    <div class="container">
+        <div class="row">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">AdminPanel</a>
+                <a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="active"><a href="index.html">داشبورد</a></li>
+                    <li><a href="pages.html">برگه ها</a></li>
+                    <li><a href="categories.html">دسته بندی</a></li>
+                    <li><a href="plugins.html">افزونه ها</a></li>
+                    <li><a href="users.html">کاربران</a></li>
+                    <li><a href="comments.html">نظرات</a></li>
+                </ul>
+
+                <!-- Side-Nav -->
+                <ul id="side-nav" class="sideNav"> 
+                    <li>
+                        <div class="user-viwe">
+                            <div class="background">
+                                <img src="" alt="">
+                            </div>
+                            <a href="#">
+                                <img src="./assets/imgs/person/person-1.jpg" alt="persone-1">
+                            </a>
+                            <a href="#">
+                                <span class="name white-text">Samira Omidvar</span>
+                            </a>
+                            <a href="#">
+                                <span class="email white-text">samira0omidvar.Developer@gmail.com</span>
+
+                            </a>
+                        </div>
+                    </li>
+
+
+                    <li class="active"><a href="index.html">
+                        <i class="material-icons">dashboard</i>
+                        داشبورد</a></li>
+                    <li><a href="pages.html">برگه ها</a></li>
+                    <li><a href="categories.html">دسته بندی</a></li>
+                    <li><a href="plugins.html">افزونه ها</a></li>
+                    <li><a href="users.html">کاربران</a></li>
+                    <li><a href="comments.html">نظرات</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
 
 
 
@@ -43,13 +95,18 @@
 
 
 
-    
 <!--Attach Jquery CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
-     integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-     crossorigin="anonymous"></script>
+    <script 
+    type="text/javascript"
+     src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
      <!--Attach Materilize JS File -->
-    <script src="./assets/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./assets/materialize/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.button-collapse').sideNav();
+        });
+    </script>
 </body>
 </html>
