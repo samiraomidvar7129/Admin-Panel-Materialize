@@ -1,215 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin-Panel-Materialize</title>
 
     <!--Attach Materilize Fonts CDN -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
     <!--Attach Mateerialize CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+    />
 
-
-
-</head>
-<body>
+    <!-- Attach Styles.css File -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body >
     <!--NAVBAR -->
-<nav class="blue darken-2">
-    <div class="container">
+    <nav class="blue darken-2">
+      <div class="container">
         <div class="row">
-            <div class="nav-wrapper">
-                <a href="index.html" class="brand-logo">AdminPanel</a>
-                <a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
-                    <i class="material-icons">menu</i>
-                </a>
-                <ul class="right hide-on-med-and-down">
-                    <li class="active"><a href="index.html">داشبورد</a></li>
-                    <li><a href="pages.html">برگه ها</a></li>
-                    <li><a href="categories.html">دسته بندی</a></li>
-                    <li><a href="plugins.html">افزونه ها</a></li>
-                    <li><a href="users.html">کاربران</a></li>
-                    <li><a href="comments.html">نظرات</a></li>
-                </ul>
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">AdminPanel</a>
+            <a
+              href="#"
+              data-activates="side-nav"
+              class="button-collapse show-on-large right"
+            >
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li class="active"><a href="index.html">داشبورد</a></li>
+              <li><a href="pages.html">برگه ها</a></li>
+              <li><a href="categories.html">دسته بندی</a></li>
+              <li><a href="plugins.html">افزونه ها</a></li>
+              <li><a href="users.html">کاربران</a></li>
+              <li><a href="comments.html">نظرات</a></li>
+            </ul>
 
-                <!-- Side-Nav -->
-                <ul id="side-nav" class="side-nav "> 
-                    <li>
-                        <div class="user-viwe">
-                            <div class="background">
-                                <img src="" alt="">
-                            </div>
-                            <a href="#">
-                                <img src="./assets/imgs/person/person-1.jpg" alt="persone-1">
-                            </a>
-                            <a href="#">
-                                <span class="name white-text">Samira Omidvar</span>
-                            </a>
-                            <a href="#">
-                                <span class="email white-text">samira.omidvar.Developer@gmail.com</span>
+            <!-- Side-Nav -->
+            <ul id="side-nav" class="side-nav">
+              <li>
+                <div class="user-viwe">
+                  <div class="background">
+                    <img src="" alt="" />
+                  </div>
+                  <a href="#">
+                    <img
+                      src="./assets/imgs/person/person-1.jpg"
+                      class="circle"
+                      alt="persone-1"
+                    />
+                  </a>
+                  <a href="#">
+                    <span class="name white-text">Samira Omidvar</span>
+                  </a>
+                  <a href="#">
+                    <span class="email white-text"
+                      >samira.omidvar.Developer@gmail.com</span
+                    >
+                  </a>
+                </div>
+              </li>
 
-                            </a>
+              <li class="active">
+                <a href="index.html">
+                  <i class="material-icons">dashboard</i>
+                  داشبورد</a
+                >
+              </li>
+              <li><a href="pages.html">برگه ها</a></li>
+              <li><a href="categories.html">دسته بندی</a></li>
+              <li><a href="plugins.html">افزونه ها</a></li>
+              <li><a href="users.html">کاربران</a></li>
+              <li><a href="comments.html">نظرات</a></li>
+              <li><a href="#" class="divider"></a></li>
+              <li><a href="#" class="subheader">Account Controls</a></li>
+              <li><a href="login.html" class="waves-effect">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- START STATS -->
+    <section class="section center section-stats">
+      <div class="row">
+        <div class="col s12 m6 l3">
+          <div class="card-panel blue lighten-1 white-text center">
+            <i class="material-icons">insert_emoticon</i>
+            <h5>بازدیدها</h5>
+            <h3 class="count">548</h3>
+            <div class="progress grey lighten-1">
+              <div class="determinate white" style="width: 40%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card-panel center">
+            <i class="material-icons">mode_edit</i>
+            <h5>وبلاگ</h5>
+            <h3 class="count">560</h3>
+            <div class="progress grey">
+              <div class="determinate blue lighten-1" style="width: 40%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l3">
+          <div class="card-panel blue lighten-1 white-text center">
+            <i class="material-icons">insert_emoticon</i>
+            <h5>بازدیدها</h5>
+            <h3 class="count">238</h3>
+            <div class="progress grey lighten-1">
+              <div class="determinate white" style="width: 40%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card-panel center">
+            <i class="material-icons">supervisor_account</i>
+            <h5>کاربران</h5>
+            <h3 class="count">5700</h3>
+            <div class="progress grey lighten-1">
+              <div class="determinate white" style="width: 40%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- END STATS -->
+    <!--Start Section Chart -->
+
+    <section class="section ection-visitors blue lighten-4">
+      <div class="row">
+        <div class="col s12 m6 l8">
+          <div class="card-panel">
+            <div id="chartContainer" class="chartContainer"></div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <!-- Lasted Comments -->
+          <ul class="collection with-header lested-cooments">
+            <li class="collection-header ">
+              <h5>آخرین نظرات</h5>
+            </li>
+            <li class="collection-item avatar">
+              <img
+                src="./assets/imgs/person/person-2.jpg"
+                class="circle"
+                alt="person-2"
+              />
+              <span class="title">نازنین مقدم</span>
+              <p class="truncate">
+                درست است که نظر مثبت کاربران تأثیر بالایی روی خرید کاربران تازه
+                وارد دارد اما یک نظر منفی ممکن است همه چیز را عوض کند. دقیقا مثل
+                کنکور سراسری که یک تست اشتباه می‌تواند، چند جواب صحیح را خراب
+                کند؛
+              </p>
+              <a href="#" class="deny red-text px-3">لغو</a>|
+              <a href="#" class="approve green-text">تایید</a>
+            </li>
+            <li class="collection-item avatar">
+                <img
+                  src="./assets/imgs/person/person-3.jpg"
+                  class="circle"
+                  alt="person-2"
+                />
+                <span class="title">الناز شاهانی</span>
+                <p class="truncate">
+                  درست است که نظر مثبت کاربران تأثیر بالایی روی خرید کاربران تازه
+                  وارد دارد اما یک نظر منفی ممکن است همه چیز را عوض کند. دقیقا مثل
+                  کنکور سراسری که یک تست اشتباه می‌تواند، چند جواب صحیح را خراب
+                  کند؛
+                </p>
+                <a href="#" class="deny red-text ">لغو</a>|
+                <a href="#" class="approve green-text">تایید</a>
+              </li>
+              <li class="collection-item avatar">
+                <img
+                  src="./assets/imgs/person/person-1.jpg"
+                  class="circle"
+                  alt="person-2"
+                />
+                <span class="title">فرزاد معصومی</span>
+                <p class="truncate">
+                  درست است که نظر مثبت کاربران تأثیر بالایی روی خرید کاربران تازه
+                  وارد دارد اما یک نظر منفی ممکن است همه چیز را عوض کند. دقیقا مثل
+                  کنکور سراسری که یک تست اشتباه می‌تواند، چند جواب صحیح را خراب
+                  کند؛
+                </p>
+                <a href="#" class="deny red-text">لغو</a>|
+                <a href="#" class="approve green-text">تایید</a>
+              </li>
+              <li class="collection-item avatar">
+                <img
+                  src="./assets/imgs/person/person-3.jpg"
+                  class="circle"
+                  alt="person-2"
+                />
+                <span class="title"> محمدحسین جلیلی</span>
+                <p class="truncate">
+                  درست است که نظر مثبت کاربران تأثیر بالایی روی خرید کاربران تازه
+                  وارد دارد اما یک نظر منفی ممکن است همه چیز را عوض کند. دقیقا مثل
+                  کنکور سراسری که یک تست اشتباه می‌تواند، چند جواب صحیح را خراب
+                  کند؛
+                </p>
+                <a href="#" class="deny red-text">لغو</a>|
+                <a href="#" class="approve green-text">تایید</a>
+              </li>   
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- END Section Chart -->
+
+    <!-- Start Recent Posts -->
+    <section class="section section-recent">
+        <div class="row">
+            <div class="col s12 m6 l8">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">آخرین پست ها‌</span>
+                        <table class="striped">
+                            <thead>
+                                <tr>
+                                    <th>عنوان</th>
+                                    <th>دسته بندی</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="grey lighten-1">
+                                    <td>اولین پست</td>
+                                    <td> توسعه دهنده</td>
+                                    <td> 
+                                        <a href="details.html" class="btn blue lighten-2">جزئیات</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>دومین پست</td>
+                                    <td>  گرافیست</td>
+                                    <td> 
+                                        <a href="details.html" class="btn blue lighten-2">جزئیات</a>
+                                    </td>
+                                </tr>
+                                <tr class="grey lighten-1">
+                                    <td>سومین پست</td>
+                                    <td> طراح وب </td>
+                                    <td> 
+                                        <a href="details.html" class="btn blue lighten-2">جزئیات</a>
+                                    </td>
+                                </tr>
+                             
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">دسترسی سریع</span>
+                    <form action="#" id="todo-form">
+                        <div class="input-field">
+                            <input type="text" name="todo" id="todo" placeholder="افزودن وظیفه">
                         </div>
-                    </li>
-
-
-                    <li class="active"><a href="index.html">
-                        <i class="material-icons">dashboard</i>
-                        داشبورد</a></li>
-                    <li><a href="pages.html">برگه ها</a></li>
-                    <li><a href="categories.html">دسته بندی</a></li>
-                    <li><a href="plugins.html">افزونه ها</a></li>
-                    <li><a href="users.html">کاربران</a></li>
-                    <li><a href="comments.html">نظرات</a></li>
-                    <li><a href="#" class="divider"></a></li>
-                    <li><a href="#" class="subheader">Account Controls</a></li>
-                    <li><a href="login.html" class="waves-effect">Logout</a></li>
-                </ul>  
-            </div>
-        </div>
-    </div>
-</nav>
-<!-- END NAVBAR -->
-
-<!-- START STATS -->
-<section class="section center section-stats">
-    <div class="row">
-        <div class="col s12 m6 l3">
-            <div class="card-panel blue lighten-1 white-text center">
-                <i class="material-icons">insert_emoticon</i>
-                <h5>بازدیدها</h5>
-                <h3 class="count">548</h3>
-                <div class="progress grey lighten-1">
-                    <div class="determinate white" style="width:40% ;"></div>
+                    </form>
+                    <ul class="collection todos">
+                        <li class="collection-item">
+                            <div>وظیفه اول<a href="#" class="secondary-content delete">
+                                <i class="material-icons">close</i>
+                            </a></div>
+                        </li>
+                        <li class="collection-item">
+                            <div>وظیفه دوم<a href="#" class="secondary-content delete">
+                                <i class="material-icons">close</i>
+                            </a></div>
+                        </li>
+                        <li class="collection-item">
+                            <div>وظیفه سوم<a href="#" class="secondary-content delete">
+                                <i class="material-icons">close</i>
+                            </a></div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <div class="col s12 m6 l3">
-            <div class="card-panel center ">
-                <i class="material-icons">mode_edit</i>
-                <h5>وبلاگ</h5>
-                <h3 class="count">560</h3>
-                <div class="progress grey ">
-                    <div class="determinate  blue lighten-1" style="width:40% ;"></div>
-                </div>
-            </div>
-        </div>
-      
-        <div class="col s12 m6 l3">
-            <div class="card-panel blue lighten-1 white-text center">
-                <i class="material-icons">insert_emoticon</i>
-                <h5>بازدیدها</h5>
-                <h3 class="count">238</h3>
-                <div class="progress grey lighten-1">
-                    <div class="determinate white" style="width:40% ;"></div>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m6 l3">
-            <div class="card-panel  center">
-                <i class="material-icons">supervisor_account</i>
-                <h5>کاربران</h5>
-                <h3 class="count">5700</h3>
-                <div class="progress grey lighten-1">
-                    <div class="determinate white" style="width:40% ;"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+          </div>
 
-<!-- END STATS -->
-<!-- Preloader -->
 
-<div class="preloader-wrapper big active custom-loader">
-    <div class="spinner-layer spinner-blue-only">
-      <div class="circle-clipper left">
-        <div class="circle"></div>
-      </div><div class="gap-patch">
-        <div class="circle"></div>
-      </div><div class="circle-clipper right">
-        <div class="circle"></div>
+
+        </div>
+    </section>
+
+    <!-- Preloader -->
+    <div class="preloader-wrapper big active custom-loader">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
       </div>
     </div>
-  </div>
+    <!-- END Preloder -->
 
-  <!-- END Preloder -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- <script src="https://code.jquery.com/jquery-3.6.4.js"
- integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
- crossorigin="anonymous"></script>   
-   
-
-     <!--Attach Materilize JS File -->
+    <!--Attach Materilize JS File -->
     <!-- <script type="text/javascript" src="./assets/materialize/js/materialize.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-    <!-- Attach Styles.css File -->
-    <link rel="stylesheet" href="./assets/styles.css">
+    <!-- Attach Canvasjs CDN -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    <!-- Attach Chart.js File -->
+    <script src="./assets/js/chart.js"></script>
+
+    <script>
+      // hide section
+      $(".section").hide();
+
+      setTimeout(function () {
+        $(document).ready(function () {
+          // show section
+          $(".section").fadeIn();
+          // hide preloader
+          $(".custom-loader").fadeOut();
+
+          // sideNav
+          $(".button-collapse").sideNav();
+
+          // counter
+          $(".count").each(function () {
+            $(this)
+              .prop("Counter", 0)
+              .animate(
+                {
+                  Counter: $(this).text(),
+                },
+                {
+                  duration: 3000,
+                  easing: "swing",
+                  step: function (now) {
+                    $(this).text(Math.ceil(now));
+                  },
+                });
+          });
 
 
+        //   comments
+        $('.approve').click(function(e){
+            materialize.toast('Comment approve',3000);
+            e.preventDefault();
+        })
 
-      <script>
-        // hide section
-        $('.section').hide();
 
-        setTimeout(function(){
-            
-   $(document).ready(function(){
+        $('.deny').click(function(e){
+            materialize.toast('Comment deny',3000);
+            e.preventDefault();
+        });
+        // Quick todos
 
-// show section
-$('.section').fadeIn();
-// hide preloader
-$('.custom-loader').fadeOut();
+        $('#todo-form').submit(function(e){
+            const output=`
+            <li class="collection-item">
+                            <div>${$('#todo').val()}
+                                <a href="#" class="secondary-content delete">
+                                <i class="material-icons">close</i>
+                            </a></div>
+                        </li>`;
 
- // sideNav
- $('.button-collapse').sideNav();
+                        $('.todo').append(output);
 
- // counter
- $('.count').each(function(){
-     $(this).prop('Counter',0).animate({
-         Counter:$(this).text()
-     },{
-         duration:3000,
-         easing:'swing',
-         step:function(now){
-             $(this).text(Math.ceil(now));
-         }
-     });
- });
-});
-        },1000)
+                        materialize.toast('وظیفه اضافه شد',3000)
+            e.preventDefault();
+        });
 
-    </script>  
-</body>
+        // delete todos
+
+
+        $('.todos').on()
+
+        });
+
+      }, 1000);
+    </script>
+  </body>
 </html>
