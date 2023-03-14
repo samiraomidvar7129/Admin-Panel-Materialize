@@ -12,9 +12,10 @@
     <!--Attach Mateerialize file -->
     <link rel="stylesheet" href="./assets/materialize/css/materialize.min.css">
 
+
 </head>
 <body>
-    <!-- HEADER -->
+    <!--NAVBAR -->
 <nav class="blue darken-2">
     <div class="container">
         <div class="row">
@@ -33,7 +34,7 @@
                 </ul>
 
                 <!-- Side-Nav -->
-                <ul id="side-nav" class="sideNav"> 
+                <!-- <ul id="side-nav" class="side-nav "> 
                     <li>
                         <div class="user-viwe">
                             <div class="background">
@@ -46,7 +47,7 @@
                                 <span class="name white-text">Samira Omidvar</span>
                             </a>
                             <a href="#">
-                                <span class="email white-text">samira0omidvar.Developer@gmail.com</span>
+                                <span class="email white-text">samira.omidvar.Developer@gmail.com</span>
 
                             </a>
                         </div>
@@ -61,11 +62,65 @@
                     <li><a href="plugins.html">افزونه ها</a></li>
                     <li><a href="users.html">کاربران</a></li>
                     <li><a href="comments.html">نظرات</a></li>
-                </ul>
+                    <li><a href="#" class="divider"></a></li>
+                    <li><a href="#" class="subheader">Account Controls</a></li>
+                    <li><a href="login.html" class="waves-effect">Logout</a></li>
+                </ul> -->
             </div>
         </div>
     </div>
 </nav>
+<!-- END NAVBAR -->
+
+<!-- START STATS -->
+<section class="section center section-stats">
+    <div class="row">
+        <div class="col s12 m6 l3">
+            <div class="card-panel blue lighten-1 white-text center">
+                <i class="material-icons">insert_emoticon</i>
+                <h5>بازدیدها</h5>
+                <h3 class="count">548</h3>
+                <div class="progress grey lighten-1">
+                    <div class="determinate white" style="width:40% ;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l3">
+            <div class="card-panel center ">
+                <i class="material-icons">mode_edit</i>
+                <h5>وبلاگ</h5>
+                <h3 class="count">‌450</h3>
+                <div class="progress grey ">
+                    <div class="determinate  blue lighten-1" style="width:40% ;"></div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="col s12 m6 l3">
+            <div class="card-panel blue lighten-1 white-text center">
+                <i class="material-icons">insert_emoticon</i>
+                <h5>بازدیدها</h5>
+                <h3 class="count">238</h3>
+                <div class="progress grey lighten-1">
+                    <div class="determinate white" style="width:40% ;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l3">
+            <div class="card-panel  center">
+                <i class="material-icons">supervisor_account</i>
+                <h5>کاربران</h5>
+                <h3 class="count">5700</h3>
+                <div class="progress grey lighten-1">
+                    <div class="determinate white" style="width:40% ;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- END STATS -->
+<!-- Preloader -->
 
 
 
@@ -103,10 +158,29 @@
      <!--Attach Materilize JS File -->
     <script type="text/javascript" src="./assets/materialize/js/materialize.min.js"></script>
 
-    <script>
-        $(document).ready(function(){
-            $('.button-collapse').sideNav();
+
+     <script>
+                        // $('.section').hide();
+   $(document).ready(function(){
+
+$('.section').fadeIn();
+
+    // sideNav
+    $('.button-collapse').sideNav();
+
+    // counter
+    $('.count').each(function(){
+        $(this).prop('Counter',0).animate({
+            Counter:$(this).text()
+        },{
+            duration:3000,
+            easing:'swing',
+            step:function(now){
+                $(this).text(Math.ceil(now));
+            }
         });
-    </script>
+    });
+});
+    </script> 
 </body>
 </html>
