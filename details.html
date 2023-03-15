@@ -79,7 +79,7 @@
               <li><a href="comments.html">نظرات</a></li>
               <li><a href="#" class="divider"></a></li>
               <li><a href="#" class="subheader">تنظیمات</a></li>
-              <li><a href="login.html" class="waves-effect">خروج از حساب</a></li>
+              <li><a href="login.html" class="waves-effect">ورود به حساب</a></li>
             </ul>
           </div>
         </div>
@@ -99,15 +99,43 @@
                                 <div class="col s12 m6">
                                     <span class="card-title">جزئیات</span>
                                 </div>
-                                <div class="col s12 m6">
+                                <div class="col s12 m6 center">
                                     <img src="./assets/imgs/person/person-2.jpg" 
                                     class="responsive-img circle user-comment"  alt="user-comment">
+                                    <p>پست ایجاد شده توسط :  الهه غفاری</p>
+                                    <p>on Jan, 12 , 2018</p>
                                 </div>
                             </div>
+                            <!-- Form -->
+                            <form>
+                                <div class="input-field">
+                                    <input type="text" id="title" value="اولین پست"/>
+                                    <label for="title">عنوان</label>
+                                </div>
+            
+                                <div class="input-field">
+                                    <select >
+                                      
+                                        <option value="1" > توسعه دهنده</option>
+                                        <option value="2" > گرافیست</option>
+                                        <option value="3" > طراح وب</option>
+                                        <option value="2" > سایر</option>
+                                    </select>
+                                    <label >دسته بندی</label>
+                                </div>
+                                <div class="input-field">
+                                    <textarea name="editore" id="body"  class="materialize-textarea">
+                                        این محتوای متنی برای ایجاد پست اول است
+                                    </textarea>
+                                    <label for="body"></label>
+                                </div>
+                            </form>
+                            <!-- END Form -->
                         </div>
                      <!-- Card Action -->
                      <div class="card-action">
-                       
+                        <button class="btn green">ذخیره </button>
+                        <button class="btn red">حذف </button>
                      </div>
                      <!-- END Card Action -->
 
@@ -132,37 +160,7 @@
         
      
 
-        <!-- Modal Post -->
-           <div id="post-modal" class="modal">
-            <div class="modal-content">
-                <h4>افزودن پست</h4>
-                <form>
-                    <div class="input-field">
-                        <input type="text" id="title"/>
-                        <label for="title">عنوان</label>
-                    </div>
-
-                    <div class="input-field">
-                        <select >
-                          
-                            <option value="1" > توسعه دهنده</option>
-                            <option value="2" > گرافیست</option>
-                            <option value="3" > طراح وب</option>
-                            <option value="2" > سایر</option>
-                        </select>
-                        <label >دسته بندی</label>
-                    </div>
-                    <div class="input-field">
-                        <textarea name="editore" id="body"  class="materialize-textarea"></textarea>
-                        <label for="body"></label>
-                    </div>
-                </form>
-                <div class="modal-footer">
-                    <a href="#!" class="modal-action modal-close btn blue white-text">ارسال</a>
-                </div>
-            </div>
-           </div>
-           <!-- END Modal Post -->
+      
 
        
 
