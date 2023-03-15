@@ -38,7 +38,7 @@
             </a>
             <ul class="right hide-on-med-and-down">
               <li ><a href="index.html">داشبورد</a></li>
-              <li><a href="pages.html">برگه ها</a></li>
+              <li><a href="posts.html">پست ها</a></li>
               <li class="active"><a href="category.html">دسته بندی</a></li>
               <li><a href="plugins.html">افزونه ها</a></li>
               <li><a href="users.html">کاربران</a></li>
@@ -91,29 +91,27 @@
     </nav>
     <!-- END NAVBAR -->
 
-    <!--Start Section Posts -->
+    <!--Start Section Category -->
 
-    <section class="section section-posts grey lighten-4">
+    <section class="section section-category grey lighten-4">
         <div class="container">
             <div class="row">
                 <div class="col s12">
                     <div class="card">
                         <div class="card-content">
-                            <span class="card-title">پست ها </span>
+                            <span class="card-title">دسته بندی</span>
 
                             <!-- Table posts -->
                             <table class="striped">
                                 <thead>
                                     <tr>
                                         <th>عنوان</th>
-                                        <th>دسته بندی</th>
                                         <th>ایجاد تاریخ</th>
                                         <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr class="grey lighten-1">
-                                        <td>اولین پست</td>
                                         <td> توسعه دهنده</td>
                                         <td> Jan 1 , 2018</td>
                                         <td> 
@@ -121,7 +119,6 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>دومین پست</td>
                                         <td>  گرافیست</td>
                                         <td> Octobre 8 , 2018</td>
 
@@ -130,7 +127,6 @@
                                         </td>
                                     </tr>
                                     <tr class="grey lighten-1">
-                                        <td>سومین پست</td>
                                         <td> طراح وب </td>
                                         <td> July 4 , 2018</td>
 
@@ -138,32 +134,21 @@
                                             <a href="details.html" class="btn blue lighten-2">جزئیات</a>
                                         </td>
                                     </tr>
-                                    <tr class="grey lighten-1">
-                                        <td>چهارمین پست</td>
+                                    <tr >
                                         <td> توسعه دهنده</td>
                                         <td> Jan 1 , 2018</td>
                                         <td> 
                                             <a href="details.html" class="btn blue lighten-2">جزئیات</a>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>پنجمین پست</td>
-                                        <td>  گرافیست</td>
-                                        <td> Octobre 8 , 2018</td>
-
-                                        <td> 
-                                            <a href="details.html" class="btn blue lighten-2">جزئیات</a>
-                                        </td>
-                                    </tr>
                                     <tr class="grey lighten-1">
-                                        <td>ششمین پست</td>
-                                        <td> طراح وب </td>
-                                        <td> July 4 , 2018</td>
-
-                                        <td> 
-                                            <a href="details.html" class="btn blue lighten-2">جزئیات</a>
-                                        </td>
-                                    </tr>                                 
+                                      <td> طراح وب </td>
+                                      <td> July 4 , 2018</td>
+                                      <td> 
+                                          <a href="details.html" class="btn blue lighten-2">جزئیات</a>
+                                      </td>
+                                  </tr>
+                                                                  
                                 </tbody>
                             </table>
                         </div>
@@ -205,25 +190,7 @@
         </div>
     </section>
 
-   
-
- 
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <!--END Section Category -->
 
 
 
@@ -234,57 +201,28 @@
         
         <!-- Fixed btn -->
         <div class="fixed-action-btn">
-            <a href="" class="btn-floating btn-large red">
+            <a href="#category-modal" class="modal-trigger btn-floating btn-large red">
                 <i class="material-icons">add</i>
             </a>
-            <ul>
-                <li><a href="#post-modal" class=" modal-trigger btn-floating blue">
-                    <i class="material-icons">mode_edit</i>
-                </a></li>
-                <li><a href="#category-modal" class=" modal-trigger btn-floating blue">
-                    <i class="material-icons">folder</i>
-                </a></li>
-                <li><a href="#user-modal" class=" modal-trigger btn-floating blue">
-                    <i class="material-icons">supervisor_account</i>
-                </a></li>
-            </ul>
+           
         </div>
 
-        <!-- Modal Post -->
-           <div id="post-modal" class="modal">
-            <div class="modal-content">
-                <h4>افزودن پست</h4>
-                <form>
-                    <div class="input-field">
-                        <input type="text" id="title"/>
-                        <label for="title">عنوان</label>
-                    </div>
-
-                    <div class="input-field">
-                        <select >
-                            <option value="" disabled selected>انتخاب گزینه</option>
-                            <option value="1" > توسعه دهنده</option>
-                            <option value="2" > گرافیست</option>
-                            <option value="3" > طراح وب</option>
-                            <option value="2" > سایر</option>
-                        </select>
-                        <label >دسته بندی</label>
-                    </div>
-                    <div class="input-field">
-                        <textarea name="editore" id="body"  class="materialize-textarea"></textarea>
-                        <label for="body"></label>
-                    </div>
-                </form>
-                <div class="modal-footer">
-                    <a href="#!" class="modal-action modal-close btn blue white-text">ارسال</a>
-                </div>
-            </div>
-           </div>
-           <!-- END Modal Post -->
-
-       
-
-        
+             <!-- Start Category Modal -->
+             <div id="category-modal" class="modal">
+              <div class="modal-content">
+                  <h4>افزودن دسته بندی</h4>
+                  <form>
+                      <div class="input-field">
+                          <input type="text" id="title"/>
+                          <label for="title">عنوان</label>
+                      </div>
+                  </form>
+                  <div class="modal-footer">
+                      <a href="#!" class="modal-action modal-close btn blue white-text">ارسال</a>
+                  </div>
+              </div>
+             </div>
+             <!-- END Category Modal -->
 
 
     <!-- Preloader -->
@@ -314,13 +252,7 @@
     <!--Attach Materilize JS CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-
-    <!-- CK Editor CDN -->
-    <script src="https://cdn.ckeditor.com/4.20.2/standard/ckeditor.js"></script>
-
-
-
-    
+ 
 
     <script>
 
@@ -343,7 +275,6 @@
         // show select
         $('select').material_select();
 
-        CKEDITOR.replace('editore');
 
         });
 
