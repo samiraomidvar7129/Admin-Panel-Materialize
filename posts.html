@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin-Panel-Materialize</title>
+
+    <!--Attach Materilize Fonts CDN -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!--Attach Mateerialize CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+    />
+
+    <!-- Attach Styles.css File -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body >
+
+    <!--NAVBAR -->
+    <nav class="blue darken-2">
+      <div class="container">
+        <div class="row">
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">AdminPanel</a>
+            <a
+              href="#"
+              data-activates="side-nav"
+              class="button-collapse show-on-large right"
+            >
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li ><a href="index.html">داشبورد</a></li>
+              <li><a href="pages.html">برگه ها</a></li>
+              <li class="active"><a href="category.html">دسته بندی</a></li>
+              <li><a href="plugins.html">افزونه ها</a></li>
+              <li><a href="users.html">کاربران</a></li>
+              <li><a href="comments.html">نظرات</a></li>
+            </ul>
+
+            <!-- Side-Nav -->
+            <ul id="side-nav" class="side-nav">
+              <li>
+                <div class="user-viwe">
+                  <div class="background">
+                    <img src="" alt="" />
+                  </div>
+                  <a href="#">
+                    <img
+                      src="./assets/imgs/person/person-1.jpg"
+                      class="circle"
+                      alt="persone-1"
+                    />
+                  </a>
+                  <a href="#">
+                    <span class="name white-text">Samira Omidvar</span>
+                  </a>
+                  <a href="#">
+                    <span class="email white-text"
+                      >samira.omidvar.Developer@gmail.com</span
+                    >
+                  </a>
+                </div>
+              </li>
+
+                <a href="index.html">
+                  <i class="material-icons">dashboard</i>
+                  داشبورد</a
+                >
+              </li>
+              <li class="active" ><a href="posts.html">پست ها</a></li>
+              <li><a href="categories.html">دسته بندی</a></li>
+              <li><a href="plugins.html">افزونه ها</a></li>
+              <li><a href="users.html">کاربران</a></li>
+              <li><a href="comments.html">نظرات</a></li>
+              <li><a href="#" class="divider"></a></li>
+              <li><a href="#" class="subheader">Account Controls</a></li>
+              <li><a href="login.html" class="waves-effect">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!--Start Section Posts -->
+
+    <section class="section section-posts grey lighten-4">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">پست ها </span>
+
+                            <!-- Table posts -->
+                            <table class="striped">
+                                <thead>
+                                    <tr>
+                                        <th>عنوان</th>
+                                        <th>دسته بندی</th>
+                                        <th>ایجاد تاریخ</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="grey lighten-1">
+                                        <td>اولین پست</td>
+                                        <td> توسعه دهنده</td>
+                                        <td> Jan 1 , 2018</td>
+                                        <td> 
+                                            <a href="details.html" class="btn blue lighten-2">جزئیات</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>دومین پست</td>
+                                        <td>  گرافیست</td>
+                                        <td> Octobre 8 , 2018</td>
+
+                                        <td> 
+                                            <a href="details.html" class="btn blue lighten-2">جزئیات</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="grey lighten-1">
+                                        <td>سومین پست</td>
+                                        <td> طراح وب </td>
+                                        <td> July 4 , 2018</td>
+
+                                        <td> 
+                                            <a href="details.html" class="btn blue lighten-2">جزئیات</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="grey lighten-1">
+                                        <td>چهارمین پست</td>
+                                        <td> توسعه دهنده</td>
+                                        <td> Jan 1 , 2018</td>
+                                        <td> 
+                                            <a href="details.html" class="btn blue lighten-2">جزئیات</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>پنجمین پست</td>
+                                        <td>  گرافیست</td>
+                                        <td> Octobre 8 , 2018</td>
+
+                                        <td> 
+                                            <a href="details.html" class="btn blue lighten-2">جزئیات</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="grey lighten-1">
+                                        <td>ششمین پست</td>
+                                        <td> طراح وب </td>
+                                        <td> July 4 , 2018</td>
+
+                                        <td> 
+                                            <a href="details.html" class="btn blue lighten-2">جزئیات</a>
+                                        </td>
+                                    </tr>                                 
+                                </tbody>
+                            </table>
+                        </div>
+                     <!-- Card Action -->
+                     <div class="card-action">
+                        <ul class="pagination">
+                            <li class="disable">
+                                <a href="#!" class="blue-text">
+                                    <i class="material-icons">chevron_left</i>
+                                </a>
+                            </li>
+                            <li class="active blue lighten-2">
+                                <a href="#!" class="white-text">1</a>
+                            </li>
+                            <li class="waves-effect">
+                                <a href="#!" class="blue-text">2</a>
+                            </li>
+                            <li class="waves-effect">
+                                <a href="#!" class="blue-text">3</a>
+                            </li>
+                            <li class="waves-effect">
+                                <a href="#!" class="blue-text">4</a>
+                            </li>
+                            <li class="waves-effect">
+                                <a href="#!" class="blue-text">5</a>
+                            </li>
+                            <li class="waves-effect">
+                                <a href="#!" class="blue-text">
+                                    <i class="material-icons">chevron_right</i>
+                                </a>
+                            </li>
+                         
+                        </ul>
+                     </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+ 
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Start Footer -->
+        <footer class="section blue darken-2 white-text center">
+            <p>Admin-Panel Copyright &copy; 2014</p>
+        </footer>
+        
+        <!-- Fixed btn -->
+        <div class="fixed-action-btn">
+            <a href="" class="btn-floating btn-large red">
+                <i class="material-icons">add</i>
+            </a>
+            <ul>
+                <li><a href="#post-modal" class=" modal-trigger btn-floating blue">
+                    <i class="material-icons">mode_edit</i>
+                </a></li>
+                <li><a href="#category-modal" class=" modal-trigger btn-floating blue">
+                    <i class="material-icons">folder</i>
+                </a></li>
+                <li><a href="#user-modal" class=" modal-trigger btn-floating blue">
+                    <i class="material-icons">supervisor_account</i>
+                </a></li>
+            </ul>
+        </div>
+
+        <!-- Modal Post -->
+           <div id="post-modal" class="modal">
+            <div class="modal-content">
+                <h4>افزودن پست</h4>
+                <form>
+                    <div class="input-field">
+                        <input type="text" id="title"/>
+                        <label for="title">عنوان</label>
+                    </div>
+
+                    <div class="input-field">
+                        <select >
+                            <option value="" disabled selected>انتخاب گزینه</option>
+                            <option value="1" > توسعه دهنده</option>
+                            <option value="2" > گرافیست</option>
+                            <option value="3" > طراح وب</option>
+                            <option value="2" > سایر</option>
+                        </select>
+                        <label >دسته بندی</label>
+                    </div>
+                    <div class="input-field">
+                        <textarea name="editore" id="body"  class="materialize-textarea"></textarea>
+                        <label for="body"></label>
+                    </div>
+                </form>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close btn blue white-text">ارسال</a>
+                </div>
+            </div>
+           </div>
+           <!-- END Modal Post -->
+
+       
+
+        
+
+
+    <!-- Preloader -->
+    <div class="preloader-wrapper big active custom-loader">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+    <!-- END Preloder -->
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Attach Materilize JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+    <!-- CK Editor CDN -->
+    <script src="https://cdn.ckeditor.com/4.20.2/standard/ckeditor.js"></script>
+
+
+
+    
+
+    <script>
+
+      // hide section
+      $(".section").hide();
+      // =======================>
+
+      setTimeout(function () {
+        $(document).ready(function () {
+          // show section
+          $(".section").fadeIn();
+          // hide preloader
+          $(".custom-loader").fadeOut();
+
+          // sideNav
+          $(".button-collapse").sideNav();
+
+        //   show modal
+        $('.modal').modal();
+        // show select
+        $('select').material_select();
+
+        CKEDITOR.replace('editore');
+
+        });
+
+      }, 1000);
+    </script>
+
+
+
+
+  </body>
+</html>
